@@ -91,7 +91,9 @@ export default function App() {
         if (!resposta.ok) throw new Error('Falha ao criar nova ideia.');
 
         const ideiaCriada = await resposta.json();
-        const ideiaComIdUnico = { ...ideiaCriada, id: Date.now() };
+        
+        const proximoId = ideias.length > 0 ? Math.max(...ideias.map(i => i.id)) + 1 : 1;
+        const ideiaComIdUnico = { ...ideiaCriada, id: proximoId };
 
         setIdeias([ideiaComIdUnico, ...ideias]);
       } catch (err) {
@@ -99,6 +101,7 @@ export default function App() {
       }
     }
   };
+
 
   // RF05 — Marcar como executada
   const lidarComAlternarStatus = async (ideia) => {

@@ -1,0 +1,120 @@
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+
+.app-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+.app-layout {
+  display: flex;
+  gap: 30px;
+}
+
+
+.formulario-box {
+  width: 300px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.campo-grupo {
+  margin-bottom: 10px;
+}
+
+.campo-grupo label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo-grupo input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.lista-container {
+  flex: 1;
+}
+
+.lista-ideias {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cartao-ideia {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: white;
+  transition: opacity 0.2s;
+}
+
+.cartao-ideia h4 {
+  margin: 0 0 5px 0;
+}
+
+.cartao-ideia p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.ideia-executada {
+  opacity: 0.6;
+}
+
+.ideia-executada h4 {
+  text-decoration: line-through;
+}
+
+.botoes-grupo {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-azul {
+  background: blue;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cinza {
+  background: gray;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-vermelho {
+  color: red;
+  cursor: pointer;
+}
+
+.msg-status {
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.msg-erro {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
